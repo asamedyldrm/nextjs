@@ -2,10 +2,11 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Layout from '../.next/components/layout';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>SametFlix</title> 
         <link rel="icon" href="/favicon.ico" />
@@ -88,6 +89,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }
